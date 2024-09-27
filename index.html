@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.8">
+
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="script.js" defer></script>
+
+  <title>Piano</title>
+</head>
+
+<body id="body">
+  <input type="number" value="7" step="1" min="1" oninput="createPiano(this.value)"><br>
+  <input type="range" value="0.075" min="0" max="0.2" step="0.01" onchange="changeGain(this.value)">
+
+  <div id="container"></div>
+
+</body>
+</html>
